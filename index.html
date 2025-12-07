@@ -579,7 +579,7 @@
                     <tr>
                         <td><strong>Total Calories Burned</strong></td>
                         <td>Energy Expenditure Calculation</td>
-                        <td>Used to calculate your Total Daily Energy Expenditure (TDEE), enabling us to provide accurate, personalized daily calorie recommendations based on your actual activity level rather than generic estimates.</td>
+                        <td>Used to calculate your Total Daily Energy Expenditure (TDEE) and display real-time <strong>Energy Balance</strong> (Calories In - Calories Out) on your dashboard. This enables accurate, personalized calorie recommendations based on your actual activity level rather than generic estimates. The Energy Balance feature helps users understand whether they are in a caloric deficit or surplus throughout the day.</td>
                     </tr>
                     <tr>
                         <td><strong>Sleep Data</strong></td>
@@ -590,12 +590,21 @@
             </table>
 
             <h3>3.2 Background Health Data Access</h3>
-            <p>With your permission, GlowUpPal may access Health Connect data while operating in the background. This functionality enables:</p>
-            <ul>
-                <li><strong>Intelligent Meal Reminders:</strong> Context-aware notifications that consider your activity patterns (e.g., "You've had an active morning—time to refuel with a nutritious meal!")</li>
-                <li><strong>Real-Time Accuracy:</strong> Continuous synchronization of activity data throughout the day ensures your calorie recommendations remain accurate</li>
-                <li><strong>Proactive Coaching:</strong> AI-powered suggestions that adapt to your real-time health status</li>
-            </ul>
+            <p>With your permission, GlowUpPal may access Health Connect data while operating in the background. This functionality is <strong>essential</strong> for the following core features:</p>
+
+            <h4>Post-Workout Nutrition Coaching</h4>
+            <p>Our app periodically checks Health Connect for recent exercise sessions. When a workout is detected, we send timely notifications suggesting protein-rich recovery meals to support muscle recovery. This feature requires background access because workouts may occur while the app is closed.</p>
+
+            <h4>Real-Time Energy Balance</h4>
+            <p>The dashboard displays your current <strong>Energy Balance</strong> (Calories Eaten minus Calories Burned). Background access ensures this calculation uses your actual calorie burn data from Health Connect, refreshed throughout the day, rather than stale or estimated values. Without background access, your energy balance would only update when you manually open the app.</p>
+
+            <h4>Reliable Meal Reminders</h4>
+            <p>Background access ensures meal reminder notifications continue functioning even when the app is not actively open. This is essential for users with aggressive battery optimization settings (common on Samsung and other Android devices) that would otherwise prevent timely reminders.</p>
+
+            <h4>Continuous Data Synchronization</h4>
+            <p>Background access enables the app to sync your latest health metrics (steps, calories burned, sleep) so your dashboard always reflects current data when you open the app.</p>
+
+            <p><strong>Important:</strong> Background access is used solely for the features described above. We do not collect, transmit, or store your health data on any external servers. All health data remains on your device.</p>
 
             <h3>3.3 Our Health Data Commitments</h3>
             <div class="commitment-grid">
